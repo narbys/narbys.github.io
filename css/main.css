@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    color: ghostwhite;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body
+{
+    background-color:dimgray;
+}
+
+.header 
+{
+    margin: auto;
+    text-align: center;
+    color: ghostwhite;
+    padding-bottom: 9mm;  
+}
+#title
+{
+    font-size:4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4mm;
+}
+.Links img
+{
+    width: 30px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+.SelectionBar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ghostwhite;
+}
+.SelectionBar div
+{
+    margin: 0mm 5mm 0mm 5mm;
+}
