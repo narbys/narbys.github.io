@@ -48,3 +48,12 @@ body
 {
     margin: 0mm 5mm 0mm 5mm;
 }
+.ImageToShow
+{
+    text-align: center;
+    padding-top: 1cm;
+}
+.ImageToShow img
+{
+   width: 30vh;
+}

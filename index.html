@@ -32,21 +32,31 @@
     <hr>
     <div class="SelectionBar">
         <div>
-            <a href="">
+            <a href="#" onclick="return ChangeImage('wizardfrog.jpg')">
                 <h1>Frog</h1>
             </a>
         </div>
         <div>
-            <a href="">
+            <a href="#" onclick="return ChangeImage('bat.jpg')">
                 <h1>Bat</h1>
             </a>
         </div>
         <div>
-            <a href="">
+            <a href="#" onclick="return ChangeImage('fennec.jpg')">
                 <h1>Fox</h1>
             </a>
         </div>
     </div>
     <hr>
+    <div class="ImageToShow">
+        <img id="imgtoshow" src="content/wizardfrog.jpg" alt="cute frog with wizard hat">
+    </div>
+    <script>
+        function ChangeImage(imgName)
+        {
+            document.getElementById('imgtoshow').src= 'content/'+imgName;
+            return true;
+        }
+    </script>
 </body>
 </html>
