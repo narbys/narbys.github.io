@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #555555;
+    color: #888888;
     font-family: Arial, sans-serif;
 }
 
@@ -45,7 +45,7 @@ section {
     color: #eeeeee;
 }
 .card h4{
-    color: #222222;
+    color: #3a3a3a;
 }
 .card {
     width: auto;
