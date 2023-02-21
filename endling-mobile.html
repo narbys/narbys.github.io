@@ -15,7 +15,7 @@
             Sybran Aerts
         </h1>
         <div class="links">
-            <a href="index.html" class="activePage">Projects</a>
+            <a href="index.html">Projects</a>
             <a href="about.html">About</a>
             <a href="resources/CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
@@ -72,32 +72,36 @@
             </a>
         </div>
     </nav>
-    <section class="cardSection">
-        <a class="card" href="gameboy-software-development.html">
-            <img src="images/gb.jpg" alt="Gameboy running space invaders">
-            <h3>Gameboy Software development</h3>
-            <h4>2023</h4>
-        </a>
-        <a class="card" href="endling-mobile.html">
-            <img src="images/endling.jpg" alt="Foxes">
-            <h3>Endling mobile</h3>
-            <h4>2022</h4>
-        </a>
-        <a class="card" href="wip-clearchannel-adboard-preview.html">
-            <img src="images/antwerp.jpg" alt="Foxes">
-            <h3>ClearChannel: 3D Journey</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card">
-            <img src="images/ascension.png" alt="Foxes">
-            <h3>Ascension²</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card">
-            <img src="images/raytracer.png" alt="Foxes">
-            <h3>Software raytracer</h3>
-            <h4>2021</h4>
-        </a>
+    <section class="aboutSection">
+        <h1>Endling Mobile</h1><br>
+        <iframe width="948" height="507" src="https://www.youtube.com/embed/Uw1RhLFalwI" title="Endling - Extinction is Forever // Mobile Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+        <p style="text-align: center;">
+            During my final year of study in the Game Development program at Digital Arts and Entertainment, I was
+            fortunate to secure an internship at HandyGames in Bavaria, Germany. In this role, I worked on porting
+            Endling, a previously published project from Unreal Engine 4 to mobile platforms. My primary focus was on
+            optimizing performance for smooth operation on Android and iOS devices.
+            <br><br>
+            There were a lot of tools we used that were new to me prior to the internship.
+            Such as Unreal Game Sync, which we used alongside of Perforce for our source control.<br><br>
+            Android Studio was a necessary tool to port to mobile Android devices. We used this tool to install and set
+            up the SDKs correctly, as well as it's debugger to get performance measurements and call stacks on our
+            builds on the devices.
+            Unreal Insights profiler was another tool that I used a lot of the time. This tool was used for both
+            profiling CPU performance and RAM usage. For RAM there were also some other custom tools from either inside
+            the company or online that we used.
+            When the Insights profiler didn't show enough, or we needed to know the values of Shipping builds, we used
+            Snapdragon Profiler as well. This gave us a detailed overview of everything going on inside of the phone.
+
+            When we had graphical or GPU issues we used the graphics debugger RenderDoc to look into them.
+            Besides for Android, we also ported the game to iOS devices. For this, I also had to work with MacOS and
+            XCode. However, the greatest challenge for iOS was making sure the RAM didn't cross a certain threshold.
+
+            Besides these tools, Unreal Engine's build in commands also helped a ton for profiling, things like Stat
+            GPU or Stat Memory showed us values that other tools often didn't.
+            A significant issue was the compiling of shaders at runtime giving frame drops, therefore I had to
+            implement PSO Caching. This way the shaders can compile during loading screens instead, keeping the
+            framerate while playing more stable.
+        </p>
     </section>
     <footer>
         <a href="#" style="margin-bottom: 3.5rem;">↑ Back to top</a>

@@ -1,59 +1,85 @@
-*
-{
+*{
+    text-align: center;
     margin: 0;
     padding: 0;
-    color: ghostwhite;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    color: #555555;
 }
 
-body
+.defaultBody
 {
-    background-color:dimgray;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
-.header 
-{
-    margin: auto;
-    text-align: center;
-    color: ghostwhite;
-    padding-bottom: 9mm;  
+body {
+    background-color: #000000;
 }
-#title
-{
-    font-size:4rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+nav {
+    background-color: #222222;
 }
-.Links
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4mm;
+
+nav div, h1 {
+    margin: 2rem;
+    font-size: 2rem;
+    color: #eeeeee;
 }
-.Links img
-{
-    width: 30px;
-    height: auto;
-    margin: 0px 10px 0px 10px;
+
+section {
+    margin: 0 8% 0 8%;
+    margin-top: 1rem;
 }
-.SelectionBar
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ghostwhite;
+
+.links a.activePage {
+    color: #eeeeee;
 }
-.SelectionBar div
-{
-    margin: 0mm 5mm 0mm 5mm;
+
+.links a{
+    color: #555555;
+    padding: 0 1rem 0 1rem;
 }
-.ImageToShow
-{
-    text-align: center;
-    padding-top: 1cm;
+
+.card h3{
+    color: #eeeeee;
 }
-.ImageToShow img
-{
-   width: 30vh;
+.card h4{
+    color: #222222;
+}
+.card {
+    width: auto;
+    margin: 2rem;
+}
+.card img {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    background-color: #000000;
+    border-radius: 50%;
+    fill: #555555;
+}
+
+footer {
+    display: grid;
+}
+
+.aboutSection {
+    margin: 1rem 20% 3rem 20%;
+    font-size: larger;
+}
+
+.aboutSection p {
+    text-align: left;
+    
 }
