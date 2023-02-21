@@ -15,8 +15,8 @@
             Sybran Aerts
         </h1>
         <div class="links">
-            <a href="index.html" class="activePage">Projects</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Projects</a>
+            <a href="about.html" class="activePage">About</a>
             <a href="resources/CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         <div>
@@ -72,32 +72,57 @@
             </a>
         </div>
     </nav>
-    <section class="cardSection">
-        <a class="card" href="gameboy-software-development.html">
-            <img src="images/gb.jpg" alt="Gameboy running space invaders">
-            <h3>Gameboy Software development</h3>
-            <h4>2023</h4>
-        </a>
-        <a class="card" href="endling-mobile.html">
-            <img src="images/endling.jpg" alt="endling cover art">
-            <h3>Endling mobile</h3>
-            <h4>2022</h4>
-        </a>
-        <a class="card" href="clearchannel-adboard.html">
-            <img src="images/antwerp.jpg" alt="render of antwerp station">
-            <h3>ClearChannel: 3D Journey</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card" href="ascension.html">
-            <img src="images/ascension.png" alt="ascension squared title art">
-            <h3>Ascension²</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card">
-            <img src="images/raytracer.png" alt="raytraced balls">
-            <h3>Software raytracer</h3>
-            <h4>2021</h4>
-        </a>
+    <section class="aboutSection">
+        <h1>Ascension²</h1>
+        <iframe width="1264" height="711" src="https://www.youtube.com/embed/78VN0__4hZo" title="Ascension² - Gameplay trailer" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <p>
+            there needs to be some kinda button or so here to lead to the itch.io page. idk how to do that.
+            <br><br>
+            Ascension² is the game my team and I have made for the Game Projects course at DAE. 
+            The team consisted of 3 Artists (Joren Arens, Lend Van Den Berge, Jan Hahn) and 2 Programmers (Jasper Caerels and I). 
+            I asked another friend of mine not associated with DAE to make the music for the game, thank you Menno Knuts!<br><br>
+            The theme for the game was Arcade, so we decided to take a twist on one of the most well known classic arcade games: Tetris!
+            All participating Game Projects were put as a game jam on itch.io and ranked, our game managed to win 4th place out of 31 contenders!<br><br>
+            We wanted to bring back the typical arcade aspects such as fast paced fun gameplay, progressive difficulty, 
+            endless gameplay possibilities and the good old high-score table for the competitive gamers!<br><br>
+            We decided to make the game in Unity Engine, it fits the style best. As programmers we divided our tasks to each tackle 1 big aspect of the game. 
+            Jasper mainly did the player character and everything involving it while I did the blocks and other world elements.<br><br><br>
+        </p>
+        <img src="images/ascension/ascension_1.jpg" alt="" style="max-width: 100%">
+        <p><br>
+            The blocks are the most important aspect of the game, forming randomized tetromino shapes and falling down on the player to create a completely dynamic environment.
+            These shapes each exist out of multiple smaller squares, that can be individually shot by the player to clear the way upwards as they try to escape the rising lava.
+            If they fall on top of you however, you will be squashed underneath it and die.<br><br>
+            Because of this mechanic, many of these squares would be destroyed and created at runtime. 
+            To keep this optimised, we used an object pooling system with these squares inside of it. This object pooling was later also applied to the bullets. <br><br>
+            If the player reaches certain heights, a row of blocks will spawn underneath him (as seen on the image above) 
+            to prevent these steep towers and give the falling blocks a new basis to start from. <br><br>
+        </p>
+        <div class="row">
+            <img src="images/ascension/ascension_2.jpg" alt="" style="max-width: 50%" >
+            <img src="images/ascension/ascension_3.jpg" alt="" style="max-width: 50%" >
+        </div>
+        <p><br>
+            Other than blocks that could fall on top of you, the player also has to look out for certain special blocks. <br><br>
+            -Lasers coming down on the side of the screen that will destroy everything in it's path when it fires. <br>
+            -Death blocks, signified by the red skull on it that will kill you instantly when you step on it. <br>
+            -Portal blocks, that will teleport you to the corresponding portal block. 
+            This can be very beneficial but also dangerous if you teleport right under a normal block! <br>
+            -Deteriorating normal blocks, where you can't stay on too long. <br><br>
+            With all these negatives, we also have a very positive block: the boost block! This one will launch you up high into the sky and give you an advantage in ascending. <br><br><br>
+        </p>
+        <img src="images/ascension/ascension_4.jpg" alt="" style="max-width: 100%" >
+        <p><br>
+            An important part of arcade games is endless play. So if you make it through the Hell and Styx stage, 
+            you enter Space, which will go on endlessly while spawning objects like planets, satellites and UFO's at randomly in the background. <br><br>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </section>
     <footer>
         <a href="#" style="margin-bottom: 3.5rem;">↑ Back to top</a>
