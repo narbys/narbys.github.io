@@ -78,32 +78,57 @@
             </a>
         </div>
     </nav>
-    <section class="cardSection">
-        <a class="card" href="gameboy-software-development.html">
-            <img src="images/gb.jpg" alt="Gameboy running space invaders">
-            <h3>Gameboy Software development</h3>
-            <h4>2023</h4>
-        </a>
-        <a class="card" href="endling-mobile.html">
-            <img src="images/endling.jpg" alt="endling cover art">
-            <h3>Endling mobile</h3>
-            <h4>2022</h4>
-        </a>
-        <a class="card" href="clearchannel-adboard.html">
-            <img src="images/antwerp.jpg" alt="render of antwerp station">
-            <h3>ClearChannel: 3D Journey</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card" href="ascension.html">
-            <img src="images/ascension.png" alt="ascension squared title art">
-            <h3>Ascension²</h3>
-            <h4>2021</h4>
-        </a>
-        <a class="card" href="software-raytracer.html">
-            <img src="images/raytracer.png" alt="raytraced balls">
-            <h3>Software raytracer</h3>
-            <h4>2021</h4>
-        </a>
+    <section class="aboutSection">
+        <h1>Software Raytracer</h1><br>
+        <p>
+            For our Graphics Programming 1 course at DAE, we made a Software Raytracer. 
+            This became one of my favourite projects and gave me a big interest in raytracing and graphics programming in general. 
+            It was difficult but a joy to make and is featured here as the assignment I've made during DAE that I'm most proud of.<br><br>
+            Things I still want to add include: Reflections, Textures, Transparency, Threading, .. <br><br>
+            This project uses the Elite framework and math library made by Matthieu Delaere<br><br>
+        </p>
+        <div class="row">
+            <p>
+                <br>
+                For the start of a software raytracer it is best to work with primitives. 
+                The Ray-Sphere intersection is a common mathematical formula which is fairly easy to make. 
+                This is why balls are seen a lot in raytracers, along with planes. Polygons are harder and slower to do a hit test on, so these only came in later.<br><br>
+                After doing hit tests for these primitives and doing shadows, there is more advanced shading to make your objects reflect the lights in the scene. 
+                Phong shading is one of the easier BRDF (Bidirectional Reflectance Distribution Function) to implement, and looks really good in my opinion! However, 
+                it is not a realistic model. <br><br>
+            </p>
+            <img src="images/raytracer/raytracer_1.png" alt="" style="max-width: 50%">
+        </div>
+        <br><br>
+        <img src="images/raytracer/raytracer_2.png" alt="" style="max-width: 100%">
+        <img src="images/raytracer/raytracer_3.png" alt="" style="max-width: 100%">
+        <br><br>
+        <div class="row">
+            <p>
+                Phong is of course outdated and much more realistic shading can be achieved with raytracing.
+                Therefore we implemented CookTorrance shading. This uses the material properties to create realistically shaded metal or dielectric materials. <br><br>
+                The top row are all metallic and bottom all dielectric, with the left being least reflective and the right being most reflective.<br><br>
+            </p>
+            <img src="images/raytracer/raytracer_4.png" alt="" style="max-width: 55%">
+        </div>
+        <br><br>
+        <img src="images/raytracer/raytracer_5.png" alt="" style="max-width: 100%">
+        <br><br>
+        <div class="row">
+
+            <p>
+                Naturally, any renderer exists to display objects and not just primitives.
+                With a custom OBJ Reader, we read in the Stanford Bunny and then render it using the poly hit function. <br><br>
+                With having less than 1 fps, this scene is obviously the slowest of the raytracer and shows it's performance limitations on the CPU. <br><br>
+            </p>
+            <img src="images/raytracer/raytracer_6.png" alt="" style="max-width: 50%">
+        </div>
+        <br>
+        <div class="row">
+            <img src="images/raytracer/raytracer_7.png" alt="" style="max-width: 100%">
+            <br>
+            <img src="images/raytracer/raytracer_8.png" alt="" style="max-width: 100%">
+        </div>
     </section>
     <footer>
         <a href="#" style="margin-bottom: 3.5rem;">↑ Back to top</a>
