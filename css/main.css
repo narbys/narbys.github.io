@@ -121,7 +121,8 @@ footer {
   }
 
   .row img {
-    max-width: 50%;
+    width: 50%;
+    height: fit-content;
   }
 
   /* On screens that are 850px or less */
@@ -130,7 +131,7 @@ footer {
         display: block;
     }
     .row img {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
