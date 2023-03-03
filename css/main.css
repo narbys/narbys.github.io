@@ -120,6 +120,20 @@ footer {
     display: flex;
   }
 
+  .row img {
+    max-width: 50%;
+  }
+
+  /* On screens that are 850px or less */
+@media screen and (max-width: 850px) {
+    .row {
+        display: block;
+    }
+    .row img {
+        max-width: 100%;
+    }
+}
+
   .button {
     background-color: #686868;
     border: none;
